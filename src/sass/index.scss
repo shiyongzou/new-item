@@ -1,0 +1,94 @@
+@import '~antd/dist/antd.css';
+body{
+    padding: 0;
+    margin: 0;
+    background:url('../image/banner.jpg');
+    .App-header{
+        color:red;
+     }
+     a{
+        &:link {color: blue; text-decoration:none;} //未访问：蓝色、无下划线   
+        &:active{color: rgb(255, 230, 0); } //激活：红色   
+        &:visited {color:purple;text-decoration:none;} //已访问：purple、无下划线   
+        &:hover {color: red; text-decoration:none;} //鼠标移近：红色、下划线 
+     }
+     li{
+         list-style: none;
+     }
+}
+.banner{
+    background:#FF5809;
+    min-width: 1200px;
+    margin: 0 auto;
+    height: 65px;
+    .logo{ 
+        margin-left: 30px;
+        float: left;
+        margin-top: 10px;
+    }
+    .users{
+        position: relative;
+        width: 200px;
+        float: right;
+        text-align: right;
+        margin-right: 200px;
+        line-height: 60px;
+       
+        .userblock{
+            display: inline-block;
+            &:hover .select{
+                display:block;
+           }
+           .userhand{
+            margin-left: 15px;
+        }
+        .select {
+            position: absolute;
+            display: none;
+            top: 40px;
+            padding-left: 0;
+            left: 160px;
+            z-index: 999;
+            background: #7B7B7B;
+            width: 150px;
+            li{
+                border-bottom: #000000 1px solid;
+                text-align: center;
+                &:hover{
+                    background: #BB3D00;
+                    font-size: 20px;
+                    box-shadow: 0 0 30px #FFFFFF  inset;
+                }
+            }
+        }
+        
+        } 
+    }
+}
+.hande{
+    a{
+        display:inline-block;
+        width: 100%;
+        height:65px;
+        line-height: 65px;
+    }
+    .hand-tabs{
+        background: #2F0000;
+        box-shadow: 0 0 50px #FF5809 inset;
+        min-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        height: 65px;
+        display: flex;
+        li{
+            &:hover{
+                background: #B15BFF;
+                box-shadow: 0 0 10px #FFFFFF inset;
+            }
+            font-size: 24px;
+            text-align: center;
+            flex-grow: 1;
+            float: left;
+        }
+    }
+}

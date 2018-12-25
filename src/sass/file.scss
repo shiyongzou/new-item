@@ -1,0 +1,19 @@
+$tpx:200px;
+.files{
+    border: darkgoldenrod 1px solid;
+            width: $tpx;
+            height: $tpx;
+            text-align: center;
+            line-height: $tpx;
+            color: darkgrey;
+            font-size: 1.5rem;
+            position: relative;
+        input{
+            @extend .files;
+           position: absolute;
+           left: 0;
+           top: 0;
+            color: aqua;
+            opacity: 0;
+        }
+}
